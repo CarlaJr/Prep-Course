@@ -1,0 +1,18 @@
+Variables
+Las variables son como cajas que almacenan datos.
+
+Strings
+Es un tipo de dato que se compone de caracteres como letras, numeros y simbolos.
+
+Funciones (argumentos, return)
+Las funciones son acciones que puedes usar una y otra vez dentro de un programa. 
+Estas acciones pueden o no tener parámetros o argumentos que funcionarian como variables dentro de la función.
+Una función solo puede retornar un valor una sola vez, debido a que el codigo escrito debajo del return nunca se va a leer.
+
+Declaraciones if
+Las declaraciones son instrucciones.
+Extisten varios tipos de declaraciones, entre ellas las condicionales, como el if, 
+el cual genera bifurcaciones. Cada alternativa se ejecutara dependiendo de la condición que cumpla.
+
+Valores booleanos (true, false)
+Son un tipo de dato que solo da respuesta de sí(true) y no(false) 
