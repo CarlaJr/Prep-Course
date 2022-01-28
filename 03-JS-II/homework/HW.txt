@@ -1,0 +1,8 @@
+for
+Es una declaración de tipo ciclo, es decir que ordena la repetición de una tarea, hasta que se cumpla una condición que la detenga
+
+&&, ||, !
+Son operadores que se usan con datos booleanos (true,false)
+&& es el equivalente a 'and' o 'y'
+|| es el equivalente a 'or' o 'o'
+! es el equivalente a 'not' o 'no'
