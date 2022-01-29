@@ -1,0 +1,3 @@
+Arrays o arreglos
+Los arreglos son un tipo de dato, que a su vez puede guardar otros valores en su interior, como una lista ordenada.
+En Javascript en los arreglos podemos guardar datos sin ninguna resticción de tipo.
