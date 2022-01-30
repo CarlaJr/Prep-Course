@@ -1,0 +1,16 @@
+Objetos
+Los objetos son listas se conforman por un índice (propiedades o key words), seguido de un valor o value.
+Estos valores pueden ser de cualquier tipo de dato, incluso funciones u otros objetos.
+
+Propiedades
+Las propiedades son un indice del objeto que nos permite hallar un valor.
+
+Métodos
+Los métodos son funciones anónimas que se declaran dentro de una propiedad.
+
+Bucle for…in
+Es un bucle especial creado para objetos, debido a que un objeto no tiene un índice estándar (como un array) que se pueda contar.
+
+Notación de puntos vs notación de corchetes
+Ambas notaciones sirven para ingresar al valor de una propiedad, 
+pero con la notación de corchetes podemos buscar la propiedad a traves de una variable que el nombre de la propiedad.
