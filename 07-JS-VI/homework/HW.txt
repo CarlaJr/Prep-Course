@@ -1,0 +1,4 @@
+Funciones Callback
+Estas funciones permiten usar una función como un argumento de otra función, ya se declarandola en el mismo parámetro o 
+colocando el nombre de la función deseada, en estos casos siempre es bueno tener una documentación sobre los argumentos de 
+una función que servira como Callback.
