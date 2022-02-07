@@ -1,0 +1,5 @@
+Prototype
+Es una propiedad 'oculta' que se halla dentro de un objeto. De preferencia su uso es para métodos.
+
+Constructors (de Clases)
+Los constructores permiten crear clases, que vendrian a ser como una plantilla base para crear objetos u otras clases.
