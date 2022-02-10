@@ -1,0 +1,26 @@
+h1{
+    color:rgb(135, 71, 218);
+}
+img{
+    width:400px;
+}
+#thirdDiv{
+    width:500px; 
+    height:600px;
+    background:rgb(220, 197, 252);
+    padding:50px;
+    border:10px dashed palegreen;
+}
+#spanId{
+    font-size:18px;
+    margin:50px;
+}
+body{
+    background-image:url(https://k60.kn3.net/taringa/5/8/6/9/B/B/genesismujica7/BDD.jpg);
+}
+div{
+    margin:auto;
+}
+*{
+    text-align:center;
+}
