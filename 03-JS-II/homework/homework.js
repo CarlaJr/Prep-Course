@@ -116,7 +116,7 @@ function fizzBuzz(numero) {
   } else if(numero % 5 === 0){
     return 'buzz';
   } else {
-    return numero
+    return numero;
   }
 }
 
@@ -165,9 +165,9 @@ function esVerdadero(valor){
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
   if(valor === true){
-    return 'Soy verdadero'
+    return 'Soy verdadero';
   } else {
-    return 'Soy falso'
+    return 'Soy falso';
   }
 }
 
@@ -177,14 +177,16 @@ function tablaDelSeis(){
   //Escribe tu código aquí   
   var arrayPorSeis = []
   for(var i = 0; i <= 10; i++){
-    arrayPorSeis.push(6 * i)
+    arrayPorSeis.push(6 * i);
   }
-  return arrayPorSeis
+  return arrayPorSeis;
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
+  return numero.toString().length === 3;
+  /* Otra forma */
   return numero >= 100 && numero <= 999;
 }
 
@@ -192,12 +194,12 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  var i = 0
+  var i = 0;
   do{
-    i++
-    numero = numero + 5
-  }while(i < 8)
-  return numero
+    i++;
+    numero = numero + 5;
+  }while(i < 8);
+  return numero;
 }
 
 

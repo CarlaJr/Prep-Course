@@ -41,12 +41,7 @@ function sumarArray(numeros, cb) {
   cb(total);
 
   // ES6
-  /* var total = numero.reduce((previousValue,currectValue) => previousValue + currectValue); */
-
-  // Otra forma
-  /* var total = numeros.reduce(function(acc,cur){return acc + cur});  */
-  // acc = acumulador cur = valor actual (curretValue)
-  /* cdjs */ /* alt + shift + a */
+  /* var total = numero.reduce((acc,cur) => acc + cur); */
 }
 
 function forEach(array, cb) {
@@ -64,6 +59,9 @@ function map(array, cb) {
   var nuevoArray = array.map(function(elemento){
     return cb(elemento);
   })
+  return nuevoArray;
+  // ES6
+  var nuevoArray = array.map((elemento) => cb(elemento))
   return nuevoArray;
 
   // otra forma:

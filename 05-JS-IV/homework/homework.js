@@ -40,6 +40,10 @@ function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // Tu código:
   var por5 = objetoMisterioso.numeroMisterioso * 5;
   return por5;
+  /* Otra forma */
+  return objetoMisterioso.numeroMisterioso * 5;
+  /* Otra forma */
+  return objetoMisterioso['numeroMisterioso'] * 5;
 }
 
 function eliminarPropiedad(objeto, unaPropiedad) {
@@ -71,6 +75,11 @@ function tieneEmail(usuario) {
     return true;
   }
   return false;
+  /* Otra forma */
+  if(usuario['email'] != undefined){
+    return true;
+  }
+  return false;
 }
 
 
@@ -81,6 +90,9 @@ function tienePropiedad(objeto, propiedad) {
   // De lo contrario, devuelve "false"
   // Tu código:
   return propiedad in objeto;
+  /* Otra forma */
+  return objeto.hasOwnProperty(propiedad); 
+  /* ** Para que estas 2 formas funcionen obj(objeto) y key(propiedad o clave) tienen que estar DIFINIDOS, sino no sirve */
 }
 
 function verificarPassword(usuario, password) {
@@ -89,6 +101,8 @@ function verificarPassword(usuario, password) {
   // De lo contrario, devuelve "false"
   // // Tu código:
   return password === usuario.password;
+  /* Otra forma */
+  return password === usuario['password'];
 }
 
 function actualizarPassword(usuario, nuevaPassword) {
@@ -96,6 +110,9 @@ function actualizarPassword(usuario, nuevaPassword) {
   // Devuelve el objeto
   // Tu código:
   usuario.password = nuevaPassword;
+  return usuario;
+  /* Otra forma */
+  usuario['password'] = nuevaPassword;
   return usuario;
 }
 
@@ -105,6 +122,9 @@ function agregarAmigo(usuario, nuevoAmigo) {
   // Devuelve el objeto "usuario"
   // // Tu código:
   usuario.amigos.push(nuevoAmigo);
+  return usuario;
+  /* Otra forma */
+  usuario['amigos'].push(nuevoAmigo);
   return usuario;
 }
 
@@ -117,6 +137,11 @@ function pasarUsuarioAPremium(usuarios) {
   for(var i = 0;i < usuarios.length;i++){
     usuarios[i].esPremium = true;
   }
+  return usuarios;
+  /* Otra forma */
+  usuarios.forEach(function(x){
+    x.esPremium = true;
+  })
   return usuarios;
 }
 
@@ -144,8 +169,13 @@ function agregarMetodoCalculoDescuento(producto) {
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
+  producto.calcularPrecioDescuento = function(){
+    return producto.precio - (producto.precio * producto.porcentajeDeDescuento);
+  }
+  return producto;
+  /* Otra forma */
   producto['calcularPrecioDescuento'] = function(){
-    return producto['precio'] - (producto.precio * producto['porcentajeDeDescuento']);
+    return producto['precio'] - (producto['precio'] * producto['porcentajeDeDescuento']);
   }
   return producto;
 }

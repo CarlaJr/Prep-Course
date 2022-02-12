@@ -31,6 +31,11 @@ function incrementarPorUno(array) {
     mas1.push(array[i] + 1);
   }
   return mas1;
+  /* Otra forma */
+  var aumentar1 = array.map(function(cur){
+    return cur + 1;
+  })
+  return aumentar1;
 }
 
 
@@ -68,6 +73,13 @@ function arrayContiene(array, elemento) {
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
   return array.includes(elemento);
+  /* Otra forma */
+  for(var i=0;i < array.length;i++){
+    if(array[i] === elemento){
+      return true;
+    };
+  }
+  return false;
 }
 
 
@@ -80,6 +92,10 @@ function agregarNumeros(numeros) {
     sumarX = sumarX + numeros[i];
   }
   return sumarX;
+  /* Otra forma */
+  return numeros.reduce(function(acc,cur){
+    return acc+cur;
+  })
 }
 
 
@@ -92,6 +108,10 @@ function promedioResultadosTest(resultadosTest) {
     sumarX = sumarX + resultadosTest[i];
   }
   return sumarX/resultadosTest.length;
+  /* Otra forma */
+  return resultadosTest.reduce(function(acc,cur){
+    return acc+cur;
+  })/resultadosTest.length;
 }
 
 
@@ -133,6 +153,11 @@ function cuentoElementos(arreglo){
     }
   }
   return paraContar.length;
+  /* Otra forma */
+  var contador = arreglo.filter(function(x){
+    return x > 18
+  });
+  return contador.length;
 }
 
 
@@ -154,6 +179,13 @@ function empiezaConNueve(n) {
   //Escribe tu código aquí
   var transform = n.toString()
   return transform[0] === '9';
+
+  /* Otra forma */
+  var num = n.toString()
+  return num.charAt(0) === "9";
+  
+  /* Otra forma */
+  return n.toString().charAt(0) === '9';
 }
 
 
@@ -199,6 +231,10 @@ function mayorACien(array) {
     }
   }
   return sobre100;
+  /* Otra forma */
+  return array.filter(function(x){
+    return x > 100;
+  });
 }
 
 
